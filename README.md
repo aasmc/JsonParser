@@ -53,7 +53,7 @@ const auto &inputString = rootDoc.AsString();
 To get a node at certain key in a Json::Dict (std::map<std::string, Json::Node>) call
 
 ```c++
-auto node = inputMap.at("key");
+auto &node = inputMap.at("key");
 ```
 
 You can print the Json::Document by calling:
